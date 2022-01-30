@@ -210,11 +210,11 @@ main i {
     }
 
     .typewriter {
-        width: 90%;
         height: auto;
     }
     .typewriter h1{
         scale: 15%;
+        font-size: 3.5vw;
         white-space: normal; /* Keeps the content on a single line */
     
     }
@@ -224,7 +224,7 @@ main i {
         align-content: center;
     }
     .typewriter i{
-        scale: 8;
+        width: 100%;
     }
 }
 
