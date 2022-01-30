@@ -131,9 +131,9 @@ main i {
     padding-right: 5rem;
 }
 
-.typewriter {
+/* .typewriter {
     display: inline-block;
-}
+} */
 .typewriter h1 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .07em solid rgb(0, 141, 141); /* The typwriter cursor */
@@ -173,21 +173,25 @@ main i {
     text-align: center;
 }
 
-.mobile-title {
+/* .mobile-title {
     display: none;
-}
+} */
 
 /* ---------------- MOBILE ---------------- */
 
 /* Small Screens */
 @media only screen and (max-width: 600px) {
-    .typewriter {
+    /* .typewriter {
         display: none;
     }
 
     .mobile-title {
-        display: inline-block;
+        display:inline;
     }
+    .mobile-title h1 {
+        font-size: 100px;
+        margin-top: 25%;
+    } */
 
     .navbar {
         bottom: 0;
