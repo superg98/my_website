@@ -138,9 +138,9 @@ main i {
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .07em; /* Adjust as needed */
     animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
-  }
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
   
   /* The typing effect */
   @keyframes typing {
@@ -153,7 +153,6 @@ main i {
     from, to { border-color: transparent }
     50% { border-color: rgb(0, 141, 141); }
   }
-
 
 .footer {
     font-size: 12px;
@@ -200,7 +199,7 @@ main i {
     .nav-link i {
         scale: 1.5;
         margin: 0.1rem;
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
     }
     .navbar .link-text {
         display: none;
@@ -211,14 +210,14 @@ main i {
     }
 
     .typewriter h1{
-        scale: 0.6;
+        scale: 35%;
         white-space: normal; /* Keeps the content on a single line */
     
     }
     .typewriter p{
         padding-left: 7rem;
         padding-right: 7rem;
-        font-size: 20px;
+        scale: 90%;
         white-space: pre-wrap;
     }
 }
