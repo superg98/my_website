@@ -196,9 +196,6 @@ main i {
         align-content: center;
         margin-bottom: 5rem;
     }
-    .mobile-title i {
-        scale: 5;
-    }
 
     .navbar {
         bottom: 0;
