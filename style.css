@@ -215,6 +215,12 @@ main i {
         white-space: normal; /* Keeps the content on a single line */
     
     }
+    .typewriter p{
+        padding-left: 7rem;
+        padding-right: 7rem;
+        font-size: 20px;
+        white-space: pre-wrap;
+    }
 }
 
 /* Large Screens */
