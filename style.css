@@ -190,8 +190,8 @@ main i {
         width: 90%;
     }
     .mobile-title h1 {
+        text-align: center;
         font-size: 3rem;
-        align-self: center;
         margin-top: 25%;
         align-content: center;
         margin-bottom: 5rem;
