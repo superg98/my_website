@@ -217,8 +217,12 @@ main i {
     .typewriter p{
         padding-left: 7rem;
         padding-right: 7rem;
-        scale: 90%;
+        font-size: 20px;
         white-space: pre-wrap;
+        align-content: center;
+    }
+    .typewriter i{
+        height: 40px;
     }
 }
 
