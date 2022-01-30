@@ -222,7 +222,8 @@ main i {
     .nav-link i {
         scale: 1.5;
         margin: 0.1rem;
-        padding-bottom: 2rem;
+        margin-top: auto;
+        margin-bottom: auto;
     }
     .navbar .link-text {
         display: none;
