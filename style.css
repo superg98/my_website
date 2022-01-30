@@ -1,0 +1,236 @@
+:root{
+    font-size: 16px;
+    font-family: 'Martel Sans', sans-serif;
+    --text-primary: white;
+    --text-secondary: grey;
+    --bg-primary: rgb(0, 141, 141);
+    --bg-secondary: rgb(163, 131, 88);
+    --transition-speed: 600ms;
+    --new-page-speed: 1s;
+}
+h1 {
+    font-family: 'Unica One', cursive;
+    font-size: 45px;
+}
+body {
+    color: white;
+    background-color: rgb(15, 15, 15);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+body::-webkit-scrollbar-track {
+    background: grey;
+}
+body::-webkit-scrollbar-thumb {
+    background: rgb(0, 141, 141);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5rem;
+    padding: 1rem;
+}
+main p {
+    color: rgb(0, 194, 194);
+    text-align: center;
+    margin-top: -5rem;
+}
+main i {
+    color: rgb(85, 85, 85);
+    margin-top: 2rem;
+    scale: 3;
+    display:inline;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar {
+    width: 4rem;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--bg-primary);
+    transition: width 175ms ease;
+}
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-item {
+    width: 100%;
+}
+.nav-item:hover{
+    filter:brightness(25%);
+}
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-family: 'Unica One', cursive;
+}
+.link-text {
+    display: none;
+    margin-left: 1rem;
+}
+.nav-link i {
+    scale: 2;
+    min-width: 2rem;
+    margin: 0 2rem;
+}
+.navbar:hover {
+    width: 12rem;
+}
+.navbar:hover .link-text {
+    display: block;
+}
+.logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: white;
+    background: rgb(0, 73, 73);
+    font-size: 1.5rem;
+    letter-spacing: 0.3ch;
+    width: 120%;
+}
+.logo i {
+    width: 2rem;
+    scale: 1.5;
+    transform: rotate(0deg);
+    transition: transform var(--transition-speed);
+}
+.navbar:hover .logo i {
+    width: 20rem;
+    transform: rotate(-180deg);
+}
+
+
+.table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5rem;
+    padding: 1rem;
+    
+}
+.table img {
+    width: 20rem;
+    padding-right: 5rem;
+}
+
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .07em solid rgb(0, 141, 141); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .07em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(0, 141, 141); }
+  }
+
+
+.footer {
+    font-size: 12px;
+    position: absolute;
+    align-content: center;
+    bottom: 3.5rem;
+
+}
+.footer i{
+    color: white;
+    margin-top: 2rem;
+    scale: 3;
+    display:inline;
+    width: 100%;
+    text-align: center;
+}
+
+/* ---------------- MOBILE ---------------- */
+
+/* Small Screens */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        bottom: 0;
+        width: 100vw;
+        height: 3rem;
+        padding-left: 1rem;
+    }
+    .navbar:hover {
+        width: 100vw;
+    }
+    .navbar:hover .link-text {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+    }
+    .nav-link {
+        justify-content: center;
+    }
+    .nav-link i {
+        scale: 1.5;
+        margin: 0.1rem;
+        padding-bottom: 1rem;
+    }
+    .navbar .link-text {
+        display: none;
+    }
+
+    main {
+        margin: 0;
+    }
+
+    .typewriter h1{
+        scale: 0.6;
+        white-space: normal; /* Keeps the content on a single line */
+    
+    }
+}
+
+/* Large Screens */
+@media only screen and (min-width: 600px) {
+    .navbar{
+        top: 0;
+        width: 4rem;
+        height: 100vh;
+    }
+    .navbar:hover {
+        width: 12rem;
+    }
+    .navbar:hover .link-text {
+        display: inline;
+        transition: opacity var(--transition-speed);
+    }
+}
+
+/* ---------------------------------------- */
