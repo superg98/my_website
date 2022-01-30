@@ -196,6 +196,9 @@ main i {
         align-content: center;
         margin-bottom: 5rem;
     }
+    .mobile-title i{
+        font-size: 2rem;
+    }
 
     .navbar {
         bottom: 0;
