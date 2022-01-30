@@ -222,7 +222,7 @@ main i {
     .nav-link i {
         scale: 1.5;
         margin: 0.1rem;
-        margin-top: auto;
+        margin-top: 0.2rem;
         margin-bottom: auto;
     }
     .navbar .link-text {
