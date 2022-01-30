@@ -222,7 +222,7 @@ main i {
         align-content: center;
     }
     .typewriter i{
-        height: 40px;
+        scale: 8;
     }
 }
 
